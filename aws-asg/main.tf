@@ -88,7 +88,7 @@ resource "aws_cloudwatch_metric_alarm" "aws_asg_cpu_alarm_in" {
 resource "aws_autoscaling_group" "aws_asg" {
   name = "${var.name}-asg"
   launch_configuration = aws_launch_configuration.aws_asg_launch.name
-  desired_size         = var.desired_size # (Update)
+  desired_capacity     = var.desired_size # (Update)
   min_size             = var.min_size
   max_size             = var.max_size
   vpc_zone_identifier  = var.private_subnets

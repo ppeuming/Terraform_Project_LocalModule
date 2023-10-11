@@ -30,7 +30,7 @@ variable "max_size" {
 
 variable "desired_size" {
   description = "Desired_size of ASG"
-    type = string
+  type = string
 }
 
 variable "private_subnets" {
