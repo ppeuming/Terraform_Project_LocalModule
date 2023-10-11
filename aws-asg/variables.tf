@@ -28,6 +28,11 @@ variable "max_size" {
   type = string
 }
 
+variable "desired_size" {
+  description = "Desired_size of ASG"
+    type = string
+}
+
 variable "private_subnets" {
   description = "Private_Subnets"
   type = list(string)

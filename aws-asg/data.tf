@@ -22,7 +22,8 @@ data "terraform_remote_state" "alb_remote_data" {
   backend = "s3"
   config = {
     bucket  = "myterraform-bucket-state-hwang-t"
-    key     = "${var.name}/app1/terraform.tfstate" # var.name = stage or prod
+    key     = "${var.name}/alb/terraform.tfstate" # (Update)
+
     profile = "terraform_user"
     region  = "ap-northeast-2"
   }
